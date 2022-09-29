@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>A2 Lab</title>
 </head>
 <body>
     <h1>HTML Examples</h1>
@@ -229,6 +229,72 @@ heading.
 
     Checkout my <a href="other-page.html">other page</a> <br />
 
-    <a href="/../public/index.html">Back</a>
+    <h2>Table of Contents</h2>
+    <a name="table-of-content"></a>
+    <ul>
+        <li><a href="#embedding-website">Embedding other websites</a></li>
+
+        <li><a href="#embedding-youtube">Embedding YouTube videos</a></li>
+
+        <li><a href="#embedding-slides">Embedding Google slides</a></li>
+    </ul>
+
+    <a name="embedding-website"><h2>Embedding Other Websites</h2></a>
+    <iframe width="600"
+            height="400"
+            src="https://www.northeastern.edu/">
+    </iframe> <br />
+
+    <a href="#top">Top</a><br/>
+
+    <a name="embedding-youtube">
+        <h2>Embedding YouTube</h2></a>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/amZa_i8wF5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br />
+
+    <a href="#top">Top</a><br/>
+
+    <a name="embedding-slides">
+    <h2>Embedding Google slides</h2></a>
+    <iframe width="680" height="418" frameborder="0" src="https://docs.google.com/presentation/d/1iPo0tqWnjHMFTGmUdgLamDHIqxmMU-Q0Rpx77NeA_Z4/edit?usp=sharing" allowfullscreen="true"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true" ></iframe> <br />
+
+    <a href="#top">Top</a><br/>
+
+    <h2>Table of Contents</h2>
+    <a name="table-of-content"></a>
+    <ul>
+        <li><a href="#draw-rect">Drawing Rectangles</a></li>
+
+        <li><a href="#draw-circle">Drawing Circles</a></li>
+
+        <li><a href="#draw-poly">Drawing Polygons</a></li>
+    </ul>
+
+    <a name="draw-rect">
+        <h2>Drawing Rectangles</h2></a>
+    <svg width="300" height="100">
+        <rect width="300" height="100"
+              style="fill:rgb(0,0,255); stroke-width:10; stroke:rgb(0,0,0)" />
+    </svg>
+    <br /><a href="#top">Top</a><br/>
+
+    <a name="draw-circle"><h2>Drawing Circles</h2></a>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40"
+                stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+    <br /><a href="#top">Top</a><br/>
+
+    <a name="draw-poly">
+        <h2>Drawing Polygons</h2></a>
+    <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+                 style="fill:lime; stroke:purple; stroke-width:5; fill-rule:evenodd;" />
+    </svg>
+    <br /><a href="#top">Top</a><br/>
+
+    <br /><a href="/../public/index.html">Back</a>
 </body>
 </html>
