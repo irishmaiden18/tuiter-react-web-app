@@ -1,0 +1,159 @@
+.searchbar {
+    border-radius:45px;
+    width:95%;
+    background-color: darkgray;
+    color: white;
+    height: 30px;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: black;
+    color:white;
+    padding-left: 16px;
+    margin: 0;
+    height: 100%;
+}
+.main-content {
+    box-sizing: border-box;
+    border-style: solid;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    border-color:  rgb(47, 51, 54);
+    min-height: 100%;
+}
+
+.gear {
+    width: 30px;
+    float: right;
+    margin-right: 12px;
+    margin-top: 0;
+    color: rgb(29, 161, 242);
+}
+
+.search {
+    margin-top: 0;
+}
+
+::placeholder {
+    color: white;
+    padding-left: 5px;
+}
+:-ms-input-placeholder {
+    color: white;
+}
+::-ms-input-placeholder {
+    color: white;
+}
+
+.links {
+    float: left;
+    padding: 16px;
+    font-size: 15px;
+}
+.nav {
+    list-style: none;
+    padding-inline-start: 15px;
+    margin-bottom: 0;
+    color: rgb(110, 118, 125);
+}
+
+.active {
+    color: rgb(29, 161, 242);
+    border-bottom: solid;
+}
+
+hr {
+    height: 10px;
+    background-color: darkgrey;
+    border: none;
+    width: 100%;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left:5px;
+    margin: 0;
+}
+
+.border {
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: none;
+    border-width: thin;
+    color: rgb(47, 51, 54);
+    clear: both;
+}
+
+.topic, .no-of-tuits {
+    font-size: 13px;
+    color: rgb(110,118,125);
+}
+
+.publisher {
+    color: white;
+    font-size:14px;
+}
+
+.title-time {
+    color: rgb(110,118,125);
+}
+
+.title {
+    color: white;
+    font-size:17px;
+}
+
+.sticky-footer {
+    height: 50px;
+    margin-top:-50px;
+}
+
+.space {
+    height: 75px;
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+p.sticky-footer-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.check-in-a-circle {
+    margin-bottom: -5px;
+    margin-top: 0;
+}
+
+.logo {
+    max-height: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.story-pic {
+    border-radius: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+.flex {
+    /*display: inline-block;*/
+    height: 100%;
+    vertical-align: middle;
+    float: right;
+    padding-right: 16px;
+}
