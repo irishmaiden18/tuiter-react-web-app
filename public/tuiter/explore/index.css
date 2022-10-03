@@ -90,6 +90,8 @@ ul {
     border-width: thin;
     color: rgb(47, 51, 54);
     clear: both;
+    padding: 16px;
+
 }
 
 .topic, .no-of-tuits {
@@ -148,12 +150,10 @@ p.sticky-footer-margin {
     border-radius: 30px;
     width: 100px;
     height: 100px;
+    padding: 10px;
+    padding-bottom: 20px;
 }
 
 .flex {
-    /*display: inline-block;*/
-    height: 100%;
-    vertical-align: middle;
     float: right;
-    padding-right: 16px;
 }
