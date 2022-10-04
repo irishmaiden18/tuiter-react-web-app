@@ -27,6 +27,7 @@ body {
     flex-direction: column;
     border-color:  rgb(47, 51, 54);
     min-height: 100%;
+    border-top: none;
 }
 
 .gear {
@@ -37,13 +38,19 @@ body {
     color: rgb(29, 161, 242);
 }
 
+.magnify {
+    width: 15px;
+    padding-left: 15px;
+    padding-top:10px;
+    position: absolute;
+}
 .search {
     margin-top: 0;
 }
 
 ::placeholder {
     color: white;
-    padding-left: 5px;
+    padding-left: 30px;
 }
 :-ms-input-placeholder {
     color: white;
@@ -71,7 +78,7 @@ body {
 
 hr {
     height: 10px;
-    background-color: darkgrey;
+    background-color: /*#16181d;*/#21242c;
     border: none;
     width: 100%;
     margin: 0;
@@ -117,6 +124,13 @@ ul {
     height: 50px;
     margin-top:-50px;
 }
+.sticky-footer > p > a {
+    float: right;
+    padding-right: 16px;
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+}
 
 .space {
     height: 75px;
@@ -124,11 +138,7 @@ ul {
 
 .wrapper {
     min-height: 100%;
-}
-
-p.sticky-footer-margin {
-    margin-top: 0;
-    margin-bottom: 0;
+    padding-top: 16px;
 }
 
 .check-in-a-circle {
@@ -156,4 +166,9 @@ p.sticky-footer-margin {
 
 .flex {
     float: right;
+}
+
+.dots {
+    float: right;
+    width: 15px;
 }
