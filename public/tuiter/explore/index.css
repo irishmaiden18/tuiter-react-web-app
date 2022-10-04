@@ -1,9 +1,10 @@
 .searchbar {
     border-radius:45px;
     width:95%;
-    background-color: darkgray;
+    background-color: #212327;
     color: white;
     height: 30px;
+    border-color: #2f3236;
 }
 
 html {
@@ -46,6 +47,7 @@ body {
 }
 .search {
     margin-top: 0;
+    padding-left: 16px;
 }
 
 ::placeholder {
@@ -61,12 +63,13 @@ body {
 
 .links {
     float: left;
-    padding: 16px;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
     font-size: 15px;
 }
 .nav {
     list-style: none;
-    padding-inline-start: 15px;
     margin-bottom: 0;
     color: rgb(110, 118, 125);
 }
@@ -74,6 +77,7 @@ body {
 .active {
     color: rgb(29, 161, 242);
     border-bottom: solid;
+    margin-bottom: 16px;
 }
 
 hr {
@@ -167,8 +171,7 @@ ul {
     border-radius: 30px;
     width: 100px;
     height: 100px;
-    padding: 10px;
-    padding-bottom: 20px;
+    padding: 10px 10px 20px;
 }
 
 .flex {
