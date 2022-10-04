@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>A2 Lab</title>
 </head>
 
 <body>
+<div id="top"></div>
 <h1>HTML Examples</h1>
 <h2>Heading Tags</h2>
 Text documents are often broken up into several sections and subsections. Each section is usually
@@ -153,8 +154,8 @@ Loading a local image:<br/>
 </form>
 <h2>Text boxes</h2>
 <form id="textarea">
-    <label>Biography:</label><br/>
-    <textarea cols="30" rows="10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+    <label for="bio">Biography:</label><br/>
+    <textarea id="bio" cols="30" rows="10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
 </form>
 
 <h3>Buttons</h3>
@@ -263,16 +264,16 @@ Checkout my <a href="other-page.html">other page</a> <br/>
 
 <a name="embedding-slides">
     <h2>Embedding Google slides</h2></a>
-<iframe width="680" height="418" frameborder="0"
+    <h3>Method 1</h3>
+    <iframe width="680" height="418" frameborder="0"
         src="https://docs.google.com/presentation/d/1iPo0tqWnjHMFTGmUdgLamDHIqxmMU-Q0Rpx77NeA_Z4/edit?usp=sharing"
-        allowfullscreen="true"
-        mozallowfullscreen="true"
-        webkitallowfullscreen="true"></iframe>
+            allowfullscreen="true" >
+    </iframe>
 <br/>
-
+<h3>Method 2</h3>
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRekk_y4Lds9unk-U9DnXuCawKOa0Rcy23HWzQdnxczwxkF9s3KfJ4hNKGGKA4aEbJ7roFKDOcTjHja/embed?start=true&loop=true&delayms=3000"
-        frameborder="0" width="960" height="629" allowfullscreen="true" mozallowfullscreen="true"
-        webkitallowfullscreen="true"></iframe>
+        frameborder="0" width="960" height="629" allowfullscreen="true" ></iframe>
+<br/>
 
 <a href="#top">Top</a><br/>
 
