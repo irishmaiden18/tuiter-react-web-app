@@ -78,7 +78,7 @@ body {
 
 hr {
     height: 10px;
-    background-color: /*#16181d;*/#21242c;
+    background-color: #21242c;
     border: none;
     width: 100%;
     margin: 0;
@@ -141,6 +141,13 @@ ul {
     padding-top: 16px;
 }
 
+.sticky-footer > p > a.back {
+    float: left;
+    padding-left: 16px;
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(110,118,125);
+}
 .check-in-a-circle {
     margin-bottom: -5px;
     margin-top: 0;
