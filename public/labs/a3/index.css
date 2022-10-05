@@ -201,3 +201,345 @@ p#id-selector-2 {
 .back {
     margin-top:50px;
 }
+
+.rotate-paragraph {
+    width: 250px;
+    height: 250px;
+    transform: rotate(90deg);
+}
+
+.rotate-list {
+    transform: rotate(12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+.rotate-list-counter-clockwise {
+    transform: rotate(-12deg);
+    width: 100px;
+    background-color: green;
+    color: white;
+}
+
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+
+.rotate-image {
+    transform: rotate(-10deg);
+}
+
+.rotate-tropical-image {
+    transform: rotate(180deg);
+}
+
+.space {
+    height: 75px;
+}
+
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);}
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;}
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;}
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;}
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;}
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+
+.gradients-linear {
+    background: linear-gradient(yellow, red);
+    width: 200px;
+    height: 200px;
+}
+
+.cool-gradients-linear {
+    background: linear-gradient(aqua, blue);
+    width: 300px;
+    height: 300px;
+}
+
+.gradients-radial {
+    background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
+
+.my-gradients-radial {
+    background: radial-gradient(blue, purple);
+    width: 600px;
+    height: 100px;
+}
+
+.gradients-positioned {
+    background: radial-gradient(at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.my-gradients-positioned {
+    background: radial-gradient(at bottom right, yellow, red);
+    width: 400px;
+    height: 100px;
+    color: white;
+}
+
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        color: black;
+    }
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 300%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+    }
+}
+
+.my-animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 10s;
+    animation-name: myslidein;
+    width: 200px;
+    height: 400px;
+    background-color: blue;
+    color: white;
+}
+
+@keyframes myslidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 400px;
+        background-color: purple;
+        color: white;
+    }
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 300%;
+        margin-left: 25%;
+        width: 400px;
+        height: 600px;
+        background-color: darkcyan;
+        color: black;
+    }
+
+    to {
+        position: relative;
+        top: -300px;
+        font-size: 400%;
+        margin-left: 0%;
+        width: 350px;
+        height: 380px;
+        background-color: aqua;
+        color: black;
+    }
+}
+
+.flex-container {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+.flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1 {
+    background-color: yellow;
+}
+.flex-box-2 {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3 {
+    background-color: red;
+    color: white;
+}
+
+.my-flex-box {
+    border: 3px aqua dashed;
+    margin: 10px;
+    padding: 10px;
+}
+
+.my-flex-box-1 {
+    background-color: lightseagreen;
+    color: black;
+}
+.my-flex-box-2 {
+    background-color: forestgreen;
+    color: white;
+}
+.my-flex-box-3 {
+    background-color: mediumseagreen;
+    color: white;
+}
+
+.flex-container-default {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    margin: 5px;
+}
+
+.flex-container-center {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.flex-container-end {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: end;
+    margin: 5px;
+}
+
+.flex-container-space-around {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.flex-container-space-between {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.flex-container-vertical-top {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 100px;
+    margin: 5px
+}
+
+.flex-container-vertical-center {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    margin: 5px
+}
+
+.flex-container-fill {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    height: 100px;
+    margin: 5px
+    /*justify-content: space-evenly;*/
+    /*align-items: center;*/
+}
+
+.flex-container-fill > .my-flex-box {
+    flex-basis: 100%;
+}
+
+.my-flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.my-flex-box-4 {
+    background-color: pink;
+    color: black;
+}
+.my-flex-box-5 {
+    background-color: purple;
+    color: white;
+}
+.my-flex-box-6 {
+    background-color: mediumpurple;
+    color: white;
+}
+
+.clear {
+    clear: both;
+}

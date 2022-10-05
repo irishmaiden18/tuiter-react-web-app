@@ -7,30 +7,6 @@
     border-color: #2f3236;
 }
 
-html {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    box-sizing: border-box;
-    background-color: black;
-    color:white;
-    padding-left: 16px;
-    margin: 0;
-    height: 100%;
-}
-.main-content {
-    box-sizing: border-box;
-    border-style: solid;
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    border-color:  rgb(47, 51, 54);
-    min-height: 100%;
-    border-top: none;
-}
-
 .gear {
     width: 30px;
     float: right;
@@ -96,13 +72,11 @@ ul {
 
 .border {
     border-top-style: solid;
-    border-right-style: solid;
     border-left-style: none;
     border-width: thin;
     color: rgb(47, 51, 54);
     clear: both;
     padding: 16px;
-
 }
 
 .topic, .no-of-tuits {
@@ -112,7 +86,7 @@ ul {
 
 .publisher {
     color: white;
-    font-size:14px;
+    font-size: 14px;
 }
 
 .title-time {
@@ -121,7 +95,7 @@ ul {
 
 .title {
     color: white;
-    font-size:17px;
+    font-size: 17px;
 }
 
 .sticky-footer {
@@ -143,6 +117,7 @@ ul {
 .wrapper {
     min-height: 100%;
     padding-top: 16px;
+    padding-right: 16px;
 }
 
 .sticky-footer > p > a.back {
@@ -171,7 +146,7 @@ ul {
     border-radius: 30px;
     width: 100px;
     height: 100px;
-    padding: 10px 10px 20px;
+    padding: 10px 10px 10px;
 }
 
 .flex {
@@ -181,4 +156,8 @@ ul {
 .dots {
     float: right;
     width: 15px;
+}
+
+.clear {
+    clear: both;
 }
