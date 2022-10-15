@@ -4,15 +4,15 @@
     height: 50px;
     margin-top:-50px;
 }
-.sticky-footer > p > a {
+.sticky-footer > a {
     float: right;
     padding-right: 16px;
     font-size: 13px;
     text-decoration: none;
-    color: white;
+    color: rgb(110,118,125);
 }
 
-.sticky-footer > p > a.back {
+.sticky-footer > a.back {
     float: left;
     padding-left: 16px;
     font-size: 13px;
