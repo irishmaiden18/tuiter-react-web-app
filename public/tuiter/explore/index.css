@@ -1,8 +1,5 @@
-
-
 .sticky-footer {
     height: 50px;
-    margin-top:-50px;
 }
 .sticky-footer > a {
     float: right;
@@ -100,4 +97,18 @@ ul {
 .middle-images {
     width: 100px;
     height: 100px;
+}
+
+.imageContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.imageText {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    font-weight: bolder;
+    font-size: calc(1rem + 1vw);
 }
