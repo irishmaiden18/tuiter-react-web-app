@@ -1,6 +1,8 @@
-import NavigationSidebar from "./index";
+import NavigationSidebar from "./index.js";
 
-import $ from "https://code.jquery.com/jquery-3.6.1.min.js";
-
-$("NavigationSidebar").write($("#container"));
-
+$('#container').append(`
+   <div>
+       <h1>Navigation</h1>
+       ${NavigationSidebar()}
+   </div>
+`);
