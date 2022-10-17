@@ -68,6 +68,7 @@ ul {
     color: black;
     height: 35px;
     border-color: lightgray;
+    background-color: white;
 }
 
 .gear {
@@ -92,6 +93,7 @@ ul {
     position: absolute;
     z-index: 2;
     display: block;
+    color: black;
 }
 
 .middle-images {
