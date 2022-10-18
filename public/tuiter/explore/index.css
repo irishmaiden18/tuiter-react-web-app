@@ -101,6 +101,12 @@ ul {
     height: 100px;
 }
 
+.avatarIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50% ;
+}
+
 .imageContainer {
     position: relative;
     text-align: center;
@@ -113,4 +119,24 @@ ul {
     margin: 0;
     font-weight: bolder;
     font-size: calc(1rem + 1vw);
+}
+
+.icons {
+    width: 506px;
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+}
+
+.icons > div > a {
+    color: rgb(110, 118, 125);
+    text-decoration: none;
+}
+
+.icons > div > a > img {
+    padding-right: 12px;
+}
+
+.homeIcons {
+    width: 40px;
 }

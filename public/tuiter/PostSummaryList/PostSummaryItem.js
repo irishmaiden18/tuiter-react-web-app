@@ -17,10 +17,10 @@ function PostSummaryItem(post) {
     }
 
     function getTime() {
-        let location = post.time;
+        let time = post.time;
         let outstring1 = '<span class="text-secondary fw-normal">&nbsp;-&nbsp;';
         let outstring2 = '</span>';
-        let outstring = outstring1 + location + outstring2;
+        let outstring = outstring1 + time + outstring2;
         return outstring;
     }
 
@@ -37,6 +37,14 @@ function PostSummaryItem(post) {
         return title;
     }
 
+    function getNoOfTuits() {
+        let tuits = post.tweets;
+        let outstring1 = '<span class="text-secondary fw-normal">';
+        let outstring2 = '</span>';
+        let outstring = outstring1 + tuits + outstring2;
+        return outstring;
+    }
+
     let output = `
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                             <div class="ms-0 w-100 d-flex align-items-center">
@@ -45,6 +53,8 @@ function PostSummaryItem(post) {
                                     ${getUsername()}${getTime()}
                                         <br/>
                                         ${getTitle()}
+                                        <br/>
+                                        ${getNoOfTuits()}
                                     </div>
                                 </div>
                                 ${getImg()}

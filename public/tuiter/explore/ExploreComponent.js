@@ -27,7 +27,7 @@ function helper(){
                         </li>
                </ul>
                <div class="card">
-                    <img class="card-img-top w-100" src="../../public/images/rocket.jpg" alt="Card image">
+                    <img class="card-img-top w-100" src="../../../public/images/rocket.jpg" alt="Card image">
                </div>
             </div>
     `);
