@@ -29,7 +29,7 @@ const ExploreComponent = () => {
                    </ul>
                    <div className="card px-0">
                        <div className="imageContainer">
-                           <img className="card-img-top w-100" src="../images/rocket1.jpg" alt="Card image"/>
+                           <img className="card-img-top w-100" src="../images/rocket1.jpg" alt="Card"/>
                            <h1 className="imageText text-white">SpaceX Starship</h1>
                        </div>
                        <PostSummaryList/>

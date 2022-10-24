@@ -21,7 +21,7 @@ const PostSummaryItem = (
                     <div><span className="text-secondary fw-normal">{post.tweets}</span></div>
                 </div>
                 <div className="col-2 d-flex align-items-center mx-3">
-                    <img width={100} className="float-end rounded-3" src={`/images/${post.image}`}/>
+                    <img width={100} className="float-end rounded-3" src={`/images/${post.image}`} alt="frog"/>
                 </div>
             </div>
         </li>
