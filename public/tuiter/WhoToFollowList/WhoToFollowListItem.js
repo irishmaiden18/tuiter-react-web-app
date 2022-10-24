@@ -21,7 +21,7 @@ function WhoToFollowListItem(param) {
     }
 
     let output = `
-                <li class="list-group-item d-flex justify-content-between align-items-center">
+                <li class="list-group-item align-items-center">
                     <div class="ms-0 w-100 d-flex align-items-center">
                         ${picget()}
                         <div class="ms-3 float-start w-100">
