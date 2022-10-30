@@ -2,38 +2,38 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import {library} from "@fortawesome/fontawesome-svg-core";
+import {Link} from "react-router-dom";
+import {useLocation} from "react-router";
 
 library.add(fas);
 
-const NavigationSidebar = (
-    {
-        active = 'explore'
-    }
-) => {
+const NavigationSidebar = () => {
+    const {pathname} = useLocation();
+    const paths = pathname.split('/')
+    const active = paths[2];
     return (
         <div className="list-group">
 
-            <a className={`list-group-item 
-                ${active === 'root'?'active':''}`} href={"/"}>
+            <a className={`list-group-item`}>
                 <FontAwesomeIcon icon="fa-t" className={"me-2"}/>
             </a>
 
-            <a className={`list-group-item
-                    ${active === 'home'?'active':''}`} href={"/"}>
-
-            <FontAwesomeIcon icon="fa-solid fa-house-chimney" className={"me-2"}/>
+            <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
+                <FontAwesomeIcon icon="fa-solid fa-house-chimney" className={"me-2"}/>
                 Home
-            </a>
-            <a className={`list-group-item
-                    ${active === 'explore'?'active':''}`} href={"/"}>
-                    <FontAwesomeIcon icon="fa-solid fa-hashtag" className={"me-2"}/>
+            </Link>
+
+            <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
+                <FontAwesomeIcon icon="fa-solid fa-hashtag" className={"me-2"}/>
                 Explore
-            </a>
-            <a className={`list-group-item
-                    ${active === 'notifications'?'active':''}`} href={"/"}>
-                    <FontAwesomeIcon icon="fa-solid fa-bell" className={"me-2"}/>
+            </Link>
+            <Link to="/" className="list-group-item">
+                Labs
+            </Link>
+            <Link to="/" className={`list-group-item ${active === 'notifications'?'active':''}`}>
+                <FontAwesomeIcon icon="fa-solid fa-bell" className={"me-2"}/>
                 Notifications
-            </a>
+            </Link>
             <a className={`list-group-item
                     ${active === 'messages'?'active':''}`} href={"/"}>
                     <FontAwesomeIcon icon="fa-solid fa-envelope" className={"me-2"}/>

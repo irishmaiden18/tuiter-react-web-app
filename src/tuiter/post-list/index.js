@@ -1,16 +1,16 @@
 import React from "react";
-import postsArray from './summary-posts.json';
-import PostSummaryItem from "./post-summary-item";
+import postsArray from './posts.json';
+import PostListItem from "./post-list-item";
 
-const PostSummaryList = () => {
+const PostList = () => {
     return(
         <ul className="list-group">
             {
                 postsArray.map(post =>
-                                   <PostSummaryItem
+                                   <PostListItem
                                        key={post.userName} post={post}/> )
             }
         </ul>
     );
 };
-export default PostSummaryList;
+export default PostList;

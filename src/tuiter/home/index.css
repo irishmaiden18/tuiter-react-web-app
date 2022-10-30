@@ -122,14 +122,13 @@ ul {
 }
 
 .icons {
-    width: 506px;
     display: flex;
     justify-content: space-between;
     margin: 12px;
 }
 
 .icons > div > a {
-    color: rgb(110, 118, 125);
+    color: black;
     text-decoration: none;
 }
 
