@@ -44,21 +44,21 @@ const PostListItem = (
                                 <a href="#">
                                     <img src="../images/comment.svg" className="homeIcons" alt=""/>
                                     <span
-                                        className="text-secondary fw-normal">{post.comments}</span>
+                                        className="fw-normal">{post.comments}</span>
                                 </a>
                             </div>
                             <div>
                                 <a href="#">
                                     <img src="../images/retweet.svg" className="homeIcons" alt=""/>
                                     <span
-                                        className="text-secondary fw-normal"> {post.retweet}</span>
+                                        className="fw-normal"> {post.retweet}</span>
                                 </a>
 
                             </div>
                             <div>
                                 <a href="#">
                                     <img src="../images/like.svg" className="homeIcons" alt=""/>
-                                    <span className="text-secondary fw-normal">{post.likes}</span>
+                                    <span className="fw-normal">{post.likes}</span>
                                 </a>
                             </div>
                             <div>

@@ -4,6 +4,7 @@ import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import {Routes, Route} from "react-router";
 import HomeComponent from "./home";
+import Incomplete from "./incomplete";
 
 function Tuiter() {
     return (
@@ -15,6 +16,12 @@ function Tuiter() {
                 <Routes>
                     <Route path="home"    element={<HomeComponent/>}/>
                     <Route path="explore" element={<ExploreComponent/>}/>
+                    <Route path="notifications" element={<Incomplete/>}/>
+                    <Route path="messages" element={<Incomplete/>}/>
+                    <Route path="bookmarks" element={<Incomplete/>}/>
+                    <Route path="lists" element={<Incomplete/>}/>
+                    <Route path="profile" element={<Incomplete/>}/>
+                    <Route path="more" element={<Incomplete/>}/>
                 </Routes>
             </div>
             <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
