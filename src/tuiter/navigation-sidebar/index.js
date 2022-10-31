@@ -13,11 +13,9 @@ const NavigationSidebar = () => {
     const active = paths[2];
     return (
         <div className="list-group">
-
-            <a className={`list-group-item`}>
+            <Link to="#" className={`list-group-item`}>
                 <FontAwesomeIcon icon="fa-t" className={"me-2"}/>
-            </a>
-
+            </Link>
             <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
                 <FontAwesomeIcon icon="fa-solid fa-house-chimney" className={"me-2"}/>
                 Home
