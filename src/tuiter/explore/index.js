@@ -2,7 +2,6 @@ import React from "react";
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {Link} from "react-router-dom";
 import Bibliography from "../bibliography";
 
 const ExploreComponent = () => {
