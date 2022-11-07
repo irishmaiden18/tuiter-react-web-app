@@ -1,7 +1,7 @@
 import React from "react";
 import PostList from "../post-list";
 import "./index.css";
-import Bibliography from "../bibliography";
+import {Link} from "react-router-dom";
 
 const HomeComponent = () => {
     return(
@@ -9,7 +9,7 @@ const HomeComponent = () => {
             <div className="card px-0">
                 <PostList/>
             </div>
-            <Bibliography/>
+            <Link to="/bibliography">References</Link>
         </div>
     );
 };
