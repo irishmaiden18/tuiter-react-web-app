@@ -12,7 +12,7 @@ const PostSummaryItem = (
         }
     }
 ) => {
-    return(
+    return (
         <li className="list-group-item ps-3 border border-1">
             <div className="ms-0 d-flex">
                 <div className="col-9 float-start ps-0 pe-3 py-3">
