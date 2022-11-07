@@ -3,6 +3,7 @@ import PostSummaryList from "../post-summary-list";
 import "./index.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Link} from "react-router-dom";
+import Bibliography from "../bibliography";
 
 const ExploreComponent = () => {
     return(
@@ -36,7 +37,7 @@ const ExploreComponent = () => {
                        </div>
                        <PostSummaryList/>
                    </div>
-                <Link to="/bibliography">References</Link>
+                <Bibliography/>
             </div>
     );
 };
