@@ -1,4 +1,5 @@
 import React from "react";
+
 const WhoToFollowListItem = (
     {
         who = { userName: 'SpaceX', handle: 'SpaceX', avatarIcon: 'spacex.jpg' }

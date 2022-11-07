@@ -16,7 +16,7 @@ const NavigationSidebar = () => {
             <Link to="#" className={`list-group-item`}>
                 <FontAwesomeIcon icon="fa-t" className={"me-2"}/>
             </Link>
-            <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
+            <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''} ${active === '/'?'active':''}`}>
                 <FontAwesomeIcon icon="fa-solid fa-house-chimney" className={"me-2"}/>
                 Home
             </Link>
@@ -24,7 +24,7 @@ const NavigationSidebar = () => {
                 <FontAwesomeIcon icon="fa-solid fa-hashtag" className={"me-2"}/>
                 Explore
             </Link>
-            <Link to="/" className="list-group-item">
+            <Link to="/" className={`list-group-item ${active === 'labs'?'active':''}`}>
                 <FontAwesomeIcon icon="fa-solid fa-flask-vial" className={"me-2"} />
                 Labs
             </Link>

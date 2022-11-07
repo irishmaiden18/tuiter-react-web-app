@@ -1,5 +1,5 @@
 import React from "react";
-import postsArray from './posts.json';
+import postsArray from '../data/posts.json';
 import PostListItem from "./post-list-item";
 
 const PostList = () => {

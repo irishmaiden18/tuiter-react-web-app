@@ -2,6 +2,8 @@ import React from "react";
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {Link} from "react-router-dom";
+
 const ExploreComponent = () => {
     return(
             <div className="row">
@@ -34,6 +36,7 @@ const ExploreComponent = () => {
                        </div>
                        <PostSummaryList/>
                    </div>
+                <Link to="/bibliography">References</Link>
             </div>
     );
 };

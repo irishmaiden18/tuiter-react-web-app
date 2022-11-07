@@ -3,12 +3,11 @@ import Styles from "./styles";
 import ConditionalOutput from "./condititional-output";
 import TodoItem from "./todo/todo-item";
 import TodoList from "./todo/todo-list";
-import Nav from "../../nav";
+import {Link} from "react-router-dom";
 
 function Assignment6() {
     return (
         <div>
-            <Nav/>
             <h1>Assignment 6</h1>
             <hr/>
             <TodoList /><hr/>
@@ -16,6 +15,7 @@ function Assignment6() {
             <ConditionalOutput/><hr/>
             <Styles/><hr/>
             <Classes/><hr/>
+            <Link to="/bibliography">References</Link>
         </div>
     );
 }
