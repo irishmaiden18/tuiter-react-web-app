@@ -1,5 +1,5 @@
 import React from "react";
-import "../explore/index.css";
+import Heart from "./liked";
 
 const TuitStats = (
     {
@@ -37,13 +37,13 @@ const TuitStats = (
                 </div>
                 <div>
                     <a href="/">
-                        <img src="../images/like.svg" className="homeIcons" alt=""/>
+                        <Heart />
                         <span className="fw-normal">{tuit.likes}</span>
                     </a>
                 </div>
                 <div>
                     <a href="/">
-                        <img src="../images/upload.svg" className="homeIcons" alt=""/>
+                        <i className="bi bi-share homeIcons"></i>
                     </a>
                 </div>
             </div>

@@ -29,10 +29,11 @@ const TuitItem = (
                              src={`/images/${tuit.image}`}
                              alt=''/>
                     </div>
-                    <div className="content col-9 float-start ps-0 pe-3 py-3">
+                    <div className="col-9 float-start ps-0 pe-3 py-3">
                         <div>
-                            <span className="fw-bold">{tuit.userName}</span> &nbsp; <i className="fa-solid fa-circle-check ms-1"></i>
-                            &nbsp; <span>@{tuit.handle}</span> &nbsp;-&nbsp;
+                            <span className="fw-bold">{tuit.userName}</span>&nbsp;
+                            <i className="bi bi-check-circle-fill ms-1 text-primary"></i>
+                            &nbsp;<span>{tuit.handle}</span>&nbsp;-&nbsp;
                             <span>{tuit.time}</span>
                         </div>
                         <div className="mb-2">
