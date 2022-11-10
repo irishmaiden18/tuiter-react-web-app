@@ -19,6 +19,7 @@ const TuitItem = (
         }
     }
 ) => {
+    console.log("hello");
     return (
         <li className="list-group-item ps-3 border border-1">
             <div className="ms-0 d-flex">

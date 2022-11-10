@@ -140,6 +140,10 @@ ul {
     padding-right: 12px;
 }
 
+.icons > div > a > span {
+    padding-right: 12px;
+}
+
 .homeIcons {
     width: 40px;
 }

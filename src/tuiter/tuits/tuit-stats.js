@@ -37,7 +37,7 @@ const TuitStats = (
                 </div>
                 <div>
                     <a href="/">
-                        <Heart />
+                        <Heart/>
                         <span className="fw-normal">{tuit.likes}</span>
                     </a>
                 </div>
