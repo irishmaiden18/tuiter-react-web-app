@@ -6,12 +6,12 @@ const Styles = () => {
         padding: "10px"
     }
     const bgBlue = {
-        "background-color": "lightblue",
+        "backgroundColor": "lightblue",
         "color": "black",
         ...padding10px
     };
     const bgRed = {
-        "background-color": "lightcoral",
+        "backgroundColor": "lightcoral",
         ...colorBlack,
         ...padding10px
     };

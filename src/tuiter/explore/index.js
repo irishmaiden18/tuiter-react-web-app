@@ -1,8 +1,9 @@
 import React from "react";
-import PostSummaryList from "../post-summary-list";
+import {Link} from "react-router-dom";
+import PostSummaryList from "../../tuiter/post-summary-list";
 import "./index.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {Link} from "react-router-dom";
+
 
 const ExploreComponent = () => {
     return(
@@ -34,11 +35,12 @@ const ExploreComponent = () => {
                            <img className="card-img-top w-100" src="../images/rocket1.jpg" alt="Card"/>
                            <h1 className="imageText text-white">SpaceX Starship</h1>
                        </div>
-                       <PostSummaryList/>
+
                    </div>
+                <PostSummaryList/>
                 <Link to="/bibliography">References</Link>
             </div>
     );
-};
+}
 
 export default ExploreComponent;

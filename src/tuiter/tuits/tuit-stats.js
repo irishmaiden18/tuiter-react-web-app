@@ -10,8 +10,8 @@ const TuitStats = (
             "time": "2h",
             "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
             "image": "spacex.jpg",
-            "liked": true,
-            "replies": "123",
+            "liked": false,
+            "replies": "555",
             "retuits": "432",
             "likes": "2345",
             "handle": "@spacex",
@@ -37,7 +37,7 @@ const TuitStats = (
                 </div>
                 <div>
                     <a href="/">
-                        <Heart/>
+                        <Heart tuit={tuit}/>
                         <span className="fw-normal">{tuit.likes}</span>
                     </a>
                 </div>

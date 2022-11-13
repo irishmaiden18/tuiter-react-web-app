@@ -78,8 +78,11 @@ ul {
 }
 
 ::placeholder {
-    color: black;
-    padding-left: 35px;
+    color: red;
+}
+
+textarea::placeholder {
+    color: purple;
 }
 
 .has-search .form-control-feedback {

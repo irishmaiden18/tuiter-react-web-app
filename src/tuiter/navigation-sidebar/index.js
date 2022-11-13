@@ -11,12 +11,13 @@ const NavigationSidebar = () => {
     const {pathname} = useLocation();
     const paths = pathname.split('/')
     const active = paths[2];
+
     return (
         <div className="list-group">
             <Link to="#" className={`list-group-item`}>
                 <FontAwesomeIcon icon="fa-t" className={"me-2"}/>
             </Link>
-            <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''} ${active === '/'?'active':''}`}>
+            <Link to="/tuiter" className={`list-group-item ${active === 'home'?'active':''} ${active == null?'active':''}`}>
                 <FontAwesomeIcon icon="fa-solid fa-house-chimney" className={"me-2"}/>
                 Home
             </Link>

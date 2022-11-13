@@ -6,13 +6,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './index.css';
 import {Provider} from "react-redux";
-import {configureStore} from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import whoReducer from "./tuiter/reducers/who-reducer";
 import tuitsReducer from "./tuiter/reducers/tuits-reducer";
+import summaryPostsReducer from "./tuiter/reducers/summaryPosts-reducer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const store = configureStore( {reducer: {who: whoReducer, tuits: tuitsReducer}});
+const store = configureStore( {reducer: {who: whoReducer, tuits: tuitsReducer, summaryPosts: summaryPostsReducer}});
 
 root.render(
   <React.StrictMode>

@@ -10,7 +10,10 @@ const TuitsList = () => {
             {
                 tuitsArray.map(tuit =>
                                    <TuitItem
-                                       key={tuit._id} tuit={tuit}/> )
+                                       key={tuit._id}
+                                       tuit={tuit}
+                                   />
+                )
             }
         </ul>
     );

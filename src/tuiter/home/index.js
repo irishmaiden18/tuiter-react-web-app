@@ -1,13 +1,16 @@
 import React from "react";
-import PostList from "../post-list";
+import TuitsList from "../tuits";
+import WhatsHappening from "./whats-happening";
 import "./index.css";
 import {Link} from "react-router-dom";
 
 const HomeComponent = () => {
     return(
         <div className="row">
+            <h4 className="mx-3">Home</h4>
+            <WhatsHappening/>
             <div className="card px-0">
-                <PostList/>
+                <TuitsList/>
             </div>
             <Link to="/bibliography">References</Link>
         </div>

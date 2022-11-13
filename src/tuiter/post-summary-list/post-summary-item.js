@@ -2,7 +2,7 @@ import React from "react";
 
 const PostSummaryItem = (
     {
-        post = {
+        summaryPost = {
             "topic": "Computer Science",
             "userName": "compsci",
             "time": "10h",
@@ -16,13 +16,13 @@ const PostSummaryItem = (
         <li className="list-group-item ps-3 border border-1">
             <div className="ms-0 d-flex">
                 <div className="col-9 float-start ps-0 pe-3 py-3">
-                    <div className="text-secondary">{post.topic}</div>
-                    <div><span className="fw-bold">{post.userName}</span>&nbsp;-&nbsp;<span className="text-secondary fw-normal">{post.time}</span></div>
-                    <div>{post.title}</div>
-                    <div><span className="text-secondary fw-normal">{post.tweets}</span></div>
+                    <div className="text-secondary">{summaryPost.topic}</div>
+                    <div><span className="fw-bold">{summaryPost.userName}</span>&nbsp;-&nbsp;<span className="text-secondary fw-normal">{summaryPost.time}</span></div>
+                    <div>{summaryPost.title}</div>
+                    <div><span className="text-secondary fw-normal">{summaryPost.tweets}</span></div>
                 </div>
                 <div className="col-2 d-flex align-items-center mx-3">
-                    <img width={100} className="float-end rounded-3" src={`/images/${post.image}`} alt=""/>
+                    <img width={100} className="float-end rounded-3" src={`/images/${summaryPost.image}`} alt=''/>
                 </div>
             </div>
         </li>

@@ -10,7 +10,7 @@ const TuitItem = (
             "time": "2h",
             "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
             "image": "spacex.jpg",
-            "liked": true,
+            "liked": false,
             "replies": "123",
             "retuits": "432",
             "likes": "2345",
@@ -19,14 +19,13 @@ const TuitItem = (
         }
     }
 ) => {
-    console.log("hello");
     return (
         <li className="list-group-item ps-3 border border-1">
             <div className="ms-0 d-flex">
                 <div className="row ps-0 pe-3 py-3">
                     <div className="col-2 mx-3">
                         <img className="rounded-circle my-2 mx-auto d-block img-fluid"
-                             width={100}
+                             width="{100}"
                              src={`/images/${tuit.image}`}
                              alt=''/>
                     </div>
@@ -40,7 +39,7 @@ const TuitItem = (
                         <div className="mb-2">
                             {tuit.tuit}
                         </div>
-                        <TuitStats/>
+                        <TuitStats tuit={tuit}/>
                     </div>
                 </div>
             </div>

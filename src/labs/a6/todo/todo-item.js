@@ -9,7 +9,8 @@ const TodoItem = (
     return (
         <li>
             <input type="checkbox"
-                   defaultChecked={todo.done}/>
+                   defaultChecked={todo.done}
+                    />
             {todo.title}
             ({todo.status})
         </li>

@@ -10,7 +10,7 @@ function Assignment6() {
         <div>
             <h1>Assignment 6</h1>
             <hr/>
-            <TodoList /><hr/>
+            <TodoList/><hr/>
             <TodoItem/><hr/>
             <ConditionalOutput/><hr/>
             <Styles/><hr/>
