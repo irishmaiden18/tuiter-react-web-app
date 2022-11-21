@@ -6,7 +6,6 @@ const currentUser = {
     "handle": "@nasa",
     "image": "nasa.svg",
 };
-console.log(currentUser)
 
 const templateTuit = {
     ...currentUser,
@@ -17,12 +16,15 @@ const templateTuit = {
     "retuits": 5,
     "likes": 10,
 }
-console.log(templateTuit)
 
 const tuitsSlice = createSlice({
-                                   name: 'tuits',
+                                   name: "tuits",
                                    initialState: tuits,
                                    reducers: {
+                                       deleteTuit(state, action) {
+                                           const index = state.findIndex(tuit => tuit._id === action.payload);
+                                           state.splice(index, 1);
+                                       },
                                        createTuit(state, action) {
                                            state.unshift({
                                                              ...action.payload,
@@ -33,5 +35,5 @@ const tuitsSlice = createSlice({
                                    }
                                });
 console.log(tuitsSlice);
-export const {createTuit} = tuitsSlice.actions;
+export const {createTuit, deleteTuit} = tuitsSlice.actions;
 export default tuitsSlice.reducer;

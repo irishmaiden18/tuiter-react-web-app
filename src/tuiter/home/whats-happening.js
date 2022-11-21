@@ -7,7 +7,6 @@ const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
-        console.log(whatsHappening);
         const newTuit = {
             tuit: whatsHappening
         }
@@ -19,7 +18,7 @@ const WhatsHappening = () => {
                 <img src="../images/nasa.svg" width="{100}" className="rounded-circle my-2 mx-auto d-block img-fluid" alt=""/>
             </div>
             <div className="col-9 px-0">
-               <textarea value={whatsHappening} placeholder="hello?"
+               <textarea value={whatsHappening} placeholder="What's happening?"
                          className="form-control border-0 px-0"
                          onChange={(event) => setWhatsHappening(event.target.value)}>
                </textarea>

@@ -45,7 +45,7 @@ const NavigationSidebar = () => {
                 <FontAwesomeIcon icon="fa-solid fa-list" className={"me-2"}/>
                 Lists
             </Link>
-            <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile'?'active':''}`}>
+            <Link to="/tuiter/profile" className={`list-group-item profile ${active === 'profile'?'active':''} ${active === 'edit-profile'?'active':''}`}>
                 <FontAwesomeIcon icon="fa-solid fa-user" className={"me-2"}/>
                 Profile
             </Link>

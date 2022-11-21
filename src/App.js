@@ -5,6 +5,9 @@ import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
 import Incomplete from "./tuiter/incomplete";
 import Bibliography from "./tuiter/bibliography";
+import ProfileComponent from "./tuiter/profile";
+import EditProfileComponent from "./tuiter/EditProfile";
+
 
 function App() {
   return (
@@ -25,11 +28,16 @@ function App() {
                          element={<Tuiter/>}/>
                   <Route path="/incomplete"
                          element={<Incomplete/>}/>
+                  <Route path="/profile"
+                         element={<ProfileComponent/>}/>
+                  <Route path="/edit-profile"
+                         element={<EditProfileComponent/>}/>
                   <Route path="labs/a7/*"
                          element={<Labs/>}/>
                   <Route path="labs/a6/*"
                          element={<Labs/>}/>
-                  <Route path="/bibliography" element={<Bibliography/>}/>
+                  <Route path="/bibliography"
+                         element={<Bibliography/>}/>
               </Routes>
           </div>
       </BrowserRouter>

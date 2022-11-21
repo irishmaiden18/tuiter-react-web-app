@@ -18,7 +18,6 @@ const Heart = (
         }
     }
 ) => {
-    console.log("it worked!");
     return (
         <span>
             {
