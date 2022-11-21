@@ -77,14 +77,6 @@ ul {
     margin-top: 0;
 }
 
-::placeholder {
-    color: red;
-}
-
-textarea::placeholder {
-    color: purple;
-}
-
 .has-search .form-control-feedback {
     position: absolute;
     z-index: 2;
