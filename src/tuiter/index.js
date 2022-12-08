@@ -6,7 +6,7 @@ import {Routes, Route} from "react-router";
 import HomeComponent from "./home";
 import Incomplete from "./incomplete";
 import ProfileComponent from "./profile";
-import EditProfileComponent from "./EditProfile";
+import EditProfileComponent from "./edit-profile";
 
 function Tuiter() {
     return (

@@ -1,5 +1,5 @@
 import React from "react";
-import TuitsList from "../tuits";
+import TuitsList from "../tuits/tuit-list";
 import WhatsHappening from "./whats-happening";
 import "./index.css";
 import {Link} from "react-router-dom";

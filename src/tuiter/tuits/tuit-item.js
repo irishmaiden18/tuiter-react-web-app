@@ -1,8 +1,10 @@
 import React from "react";
 import TuitStats from "./tuit-stats";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
+//invokes 'deleteTuitThunk' using remove icon embedded in each tuit
+//must pass a reference, & the tuit being removed, to dispatch
 const TuitItem = (
     {
         tuit = {
@@ -23,7 +25,15 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (_id) => {
-        dispatch(deleteTuit(_id));
+
+        //'deleteTuitThunk' invokes 'deleteTuit' 'service' &
+        //'await's the response (status info from corresponding endpoint on server)
+        //if status = successful => reducer passing tuit being removed is notified
+                                    //then reducer creates a new state that filters out removed 'tuit'
+                                    //from current state of 'tuits'
+        dispatch(deleteTuitThunk(_id));//*-----this is from the assignment docs, why does my IDE
+                                        // think that there should be no arguments?
+
     }
     return (
         <li className="list-group-item ps-3 border border-1">

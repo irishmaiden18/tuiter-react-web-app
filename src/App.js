@@ -6,7 +6,7 @@ import {Routes, Route} from "react-router";
 import Incomplete from "./tuiter/incomplete";
 import Bibliography from "./tuiter/bibliography";
 import ProfileComponent from "./tuiter/profile";
-import EditProfileComponent from "./tuiter/EditProfile";
+import EditProfileComponent from "./tuiter/edit-profile";
 
 
 function App() {
