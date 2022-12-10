@@ -5,8 +5,10 @@ import {findTuitsThunk} from "../../services/tuits-thunks";
 
 const TuitsList = () => {
 
+
     //get 'tuits' & 'loading flag' from reducer
-    const {tuits, loading} = useSelector(state => state.tuitsData);
+    const {tuits, loading} = useSelector(state => (state.tuitsData));
+
 
     //assign a reference to the dispatch FUNCTION, from the Redux store, to a variable: 'dispatch'
     //*----note: 'useDispatch()' returns a FUNCTION that will later be used to 'dispatch' the action
@@ -25,7 +27,9 @@ const TuitsList = () => {
     //We can extract fetched 'tuits' from reducer's store, using 'useSelector(), & render them here
     useEffect(() => {dispatch(findTuitsThunk())}, [])
 
-    const  tuitsArray = useSelector(state => state.tuits)
+    const  tuitsArray = useSelector(state => (state.tuitsData));
+    //console.log(JSON.stringify(tuitsArray, null, 4))
+
 
     return(
         <ul className="list-group">
@@ -36,7 +40,10 @@ const TuitsList = () => {
                 </li>
             }
             {
-                tuitsArray.map(tuit =>
+                //'map()' creates a new array by performing a function on each array element, does
+                //NOT execute the function for array elements without values, does NOT change
+                //original array
+                tuitsArray.tuits.map(tuit =>
                                    <TuitItem
                                        key={tuit._id}
                                        tuit={tuit}
