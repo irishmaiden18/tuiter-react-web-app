@@ -61,8 +61,7 @@ const EditProfileComponent = (
         <div className="row">
             <div>
                 <div className="d-flex align-items-center">
-                    <i className="bi bi-x-lg mx-auto col-1 mb-2"
-                       onClick={() => cancelChanges()}></i>
+                    <i className="bi bi-x-lg mx-auto col-1 mb-2" onClick={() => cancelChanges()}></i>
                     <h4 className="col-9 mb-2">Edit Profile</h4>
                     <button className="border rounded-pill fw-bold editProfileButton px-3 mb-2" onClick={profileClickHandler}>Save</button>
                 </div>
