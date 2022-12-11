@@ -3,9 +3,6 @@ import axios from 'axios';
 //location of HTTP services
 const TUITS_API = 'http://localhost:4000/api/tuits';
 
-export const createTuit = async (tuit) => {}//professor told me not to implement it
-export const updateTuit = async (tuit) => {}//professor told me not to implement it
-
 //retrieves all the tuits from the server
 //'response.data' = 'tuits' array sent back from 'findTuits' in 'tuits-controller.js' in node app
 //                = 'tuits' array embedded in response's 'data' property
@@ -34,4 +31,24 @@ export const deleteTuit = async (tid) => {
 
     //'response.data' contains 'response's status --Professor = ignore for now
     return response.data
+}
+
+export const createTuit = async (tuit) => {
+
+    //embed the 'tuit' parameter in the BODY of the HTTP request, then POST it to TUITS_API
+    const response = await axios.post(TUITS_API, tuit);
+
+    //'response.data' contains new 'tuit' (including: ID, & initial default values:
+    //'likes' = 0 & 'liked' = false)
+    return response.data;
+}
+
+//service function accepts 'tuit' to send server
+export const updateTuit = async (tuit) => {
+
+    //send HTTP PUT request appending 'tuit''s ID to URL, and embed 'tuit' object in BODY
+    const response = await axios.put(`${TUITS_API}/${tuit._id}`, tuit);
+
+    //return tuit update to update in reducer's state's store
+    return tuit;
 }

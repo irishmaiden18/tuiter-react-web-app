@@ -29,5 +29,18 @@ export const deleteTuitThunk = createAsyncThunk(
                         //return tuit ID =>
                         //tuit associated w/ 'tuitId' can be removed from reducer's store
                         return tuitId
-    }
+        }
+)
+
+
+//puts updated 'tuit' to the server using the corresponding 'updateTuit' service & dispatches new
+//'tuit' to the reducer to be updated in the state
+//create thunk for 'createTuits' w/ unique thunk identifier
+export const updateTuitThunk = createAsyncThunk(
+
+    //unique identifier for 'updateTuit' = 'tuits/updateTuit'
+    'tuits/updateTuit',
+
+    //accepts updated tuit & sends it to server using service
+    async (tuit) => await service.updateTuit(tuit)
 )

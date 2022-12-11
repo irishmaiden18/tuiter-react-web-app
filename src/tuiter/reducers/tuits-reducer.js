@@ -1,6 +1,11 @@
 import {createSlice} from "@reduxjs/toolkit";
 import tuits from '../data/tuits.json';
-import {deleteTuitThunk, findTuitsThunk,} from "../../services/tuits-thunks";
+import {
+    deleteTuitThunk,
+    createTuitThunk,
+    findTuitsThunk,
+    updateTuitThunk,
+} from "../../services/tuits-thunks";
 
 //*----note: loading = loading flag that decides whether to display a spinner or not
 
@@ -79,6 +84,21 @@ const tuitsSlice = createSlice({
                                                //that don't match, right?
                                                state.tuits =
                                                    state.tuits.filter(t => t._id !== payload)
+                                           },
+                                       [createTuitThunk.fulfilled]:
+                                           (state, {payload}) => {
+                                               state.loading = false;
+                                               state.tuits.push(payload)
+                                           },
+
+                                       [updateTuitThunk.fulfilled]:
+                                           (state, {payload}) => {
+                                                state.loading = false;
+                                                const tuitNdx = state.tuits.findIndex((t) => t._id === payload._id);
+                                                state.tuits[tuitNdx] = {
+                                                    ...state.tuits[tuitNdx],
+                                                    ...payload
+                                                }
                                            },
 
                                        //if request times out or responds w/ error

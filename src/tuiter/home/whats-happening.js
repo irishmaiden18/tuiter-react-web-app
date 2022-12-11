@@ -1,4 +1,4 @@
-import {createTuit} from "../reducers/tuits-reducer";
+import {createTuitThunk} from "../../services/tuits-thunks";
 import {useDispatch} from "react-redux";
 import React, {useState} from "react";
 import "./index.css";
@@ -10,12 +10,13 @@ const WhatsHappening = () => {
         const newTuit = {
             tuit: whatsHappening
         }
-        dispatch(createTuit(newTuit));
+        dispatch(createTuitThunk(newTuit));
     }
     return (
         <div className="row pe-0">
             <div className="col-2 mx-3">
-                <img src="../images/nasa.svg" width="{100}" className="rounded-circle my-2 mx-auto d-block img-fluid" alt=""/>
+                <img src="../images/nasa.svg" width="{100}" className="rounded-circle my-2 mx-auto
+                            d-block img-fluid" alt=""/>
             </div>
             <div className="col-9 px-0">
                <textarea value={whatsHappening} placeholder="What's happening?"
