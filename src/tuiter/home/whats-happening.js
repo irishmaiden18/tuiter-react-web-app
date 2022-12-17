@@ -10,7 +10,7 @@ const WhatsHappening = () => {
         const newTuit = {
             tuit: whatsHappening
         }
-        dispatch(createTuitThunk(newTuit));
+        //dispatch(createTuitThunk(newTuit));
     }
     return (
         <div className="row pe-0">
