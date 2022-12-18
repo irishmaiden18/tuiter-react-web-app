@@ -1,6 +1,11 @@
 import {createSlice} from "@reduxjs/toolkit";
 import tuits from '../data/tuits.json';
-import {deleteTuitThunk, findTuitsThunk,} from "../../services/tuits-thunks";
+import {
+    createTuitThunk,
+    deleteTuitThunk,
+    findTuitsThunk,
+    updateTuitThunk,
+} from "../../services/tuits-thunks";
 
 //*----note: loading = loading flag that decides whether to display a spinner or not
 
@@ -81,6 +86,21 @@ const tuitsSlice = createSlice({
                                                    state.tuits.filter(t => t._id !== payload)
                                            },
 
+                                       [createTuitThunk.fulfilled]:
+                                           (state, {payload}) => {
+                                               state.loading = false;
+                                               state.tuits.unshift(payload)
+                                           },
+
+                                       [updateTuitThunk.fulfilled]:
+                                           (state, {payload}) => {
+                                               state.loading = false;
+                                               const tuitNdx = state.tuits.findIndex((t) => t._id === payload._id);
+                                               state.tuits[tuitNdx] = {
+                                                   ...state.tuits[tuitNdx],
+                                                   ...payload
+                                               }
+                                           },
                                        //if request times out or responds w/ error
                                        [findTuitsThunk.rejected]:
 
@@ -104,17 +124,17 @@ const tuitsSlice = createSlice({
                                                state.splice(index, 1);
                                            },
 
-                                           createTuit(state, action) {
-                                               state.unshift({
-                                                                 ...action.payload,
-                                                                 ...templateTuit,
-                                                                 _id: (new Date()).getTime(),
-                                                             })
-                                           }
+                                           // createTuit(state, action) {
+                                           //     state.unshift({
+                                           //                       ...action.payload,
+                                           //                       ...templateTuit,
+                                           //                       _id: (new Date()).getTime(),
+                                           //                   })
+                                           // }
                                        },
                                    }
                                }
 )
 
-export const {createTuit, deleteTuit} = tuitsSlice.actions;
+//export const {createTuit, deleteTuit} = tuitsSlice.actions;
 export default tuitsSlice.reducer;

@@ -33,7 +33,6 @@ const TuitStats = (
                         <img src="../images/retweet.svg" className="homeIcons" alt=""/>
                         <span className="fw-normal"> {tuit.retuits}</span>
                     </a>
-
                 </div>
                 <div>
                     <a href="/">

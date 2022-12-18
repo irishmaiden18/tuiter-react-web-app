@@ -1,4 +1,6 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+import {updateTuitThunk} from "../../services/tuits-thunks";
 
 const Heart = (
     {
@@ -18,10 +20,34 @@ const Heart = (
         }
     }
 ) => {
+    const dispatch = useDispatch();
     return (
         <span>
-            {
-                tuit.liked ? (<span><i className="bi bi-heart-fill text-danger homeIcons"></i></span>) : (<span><i className="bi bi-heart homeIcons"></i></span>)
+            {/*{tuit.tuit}*/}
+            {tuit.liked ?
+             (
+                 <span>
+                     {/*Likes: {tuit.likes}*/}
+                     <i onClick={
+                         () => dispatch(updateTuitThunk({
+                                                            ...tuit,
+                                                            likes: tuit.likes + 1
+                                                        }))
+                     }
+                     className="bi bi-heart-fill text-danger homeIcons"></i>
+                 </span>
+             ) :
+             (
+                 <span>
+                     {/*Likes: {tuit.likes}*/}
+                     <i onClick={
+                        () => dispatch(updateTuitThunk({
+                                                        ...tuit,
+                                                        likes: tuit.likes + 1
+                                                    }))
+                    }
+                    className="bi bi-heart homeIcons"></i>
+                 </span>)
             }
         </span>
     );

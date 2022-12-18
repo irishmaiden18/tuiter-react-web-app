@@ -36,16 +36,16 @@ const TuitItem = (
 
     }
     return (
-        <li className="list-group-item ps-3 border border-1">
-            <div className="ms-0 d-flex">
+        <li className="container list-group-item ps-3 border border-1">
+            {/*<div className="ms-0 d-flex">*/}
                 <div className="row ps-0 pe-3 py-3">
-                    <div className="col-2 mx-3">
+                    <span className="col-2 mx-3">
                         <img className="rounded-circle my-2 mx-auto d-block img-fluid"
-                             width="{100}"
+                             width="100px"
                              src={`/images/${tuit.image}`}
                              alt=''/>
-                    </div>
-                    <div className="col-9 float-start ps-0 pe-3 py-3">
+                    </span>
+                    <span className="col-9 float-start ps-0 pe-3 py-3">
                         <div>
                             <i className="bi bi-x-lg float-end"
                                onClick={() => deleteTuitHandler(tuit._id)}></i>
@@ -58,9 +58,9 @@ const TuitItem = (
                             {tuit.tuit}
                         </div>
                         <TuitStats tuit={tuit}/>
-                    </div>
+                    </span>
                 </div>
-            </div>
+            {/*</div>*/}
         </li>
     );
 };
